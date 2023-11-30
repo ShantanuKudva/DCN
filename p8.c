@@ -32,8 +32,6 @@ if(j==7)printf("\n\nThe code is error free\n");
 else{
 printf("\n\nError Receieved at bit no %d of the data\n\n",j+1);
 edata[j]=!edata[j];
-Data Communication Networking Laboratory (18ECL77)
-Dept. of Electronics and Communication Engineering Page 34
 printf("The correct data should be : ");
 for(i=0;i<7;i++)printf("%d",edata[i]);
 }
