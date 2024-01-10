@@ -50,11 +50,11 @@ set numudp [exec grep "^r" prog5.tr | grep -c "cbr"]
 set  udptime 4.0
 
 puts "The throughput of FTP is"
-puts "[expr ($numudp*$tcpsize)/$tcptime] bytes per second"
+puts "[expr ($numtcp*$tcpsize)/$tcptime] bytes per second"
 
 
 puts "The throughput of CBR is"
-puts "[expr ($numtcp*$udpsize)/$udptime] bytes per second"
+puts "[expr ($numudp*$udpsize)/$udptime] bytes per second"
 
 exit 0
 
